@@ -1,0 +1,9 @@
+<form action="{% url 'add-playlist' %}" method="post">{% csrf_token %}
+    <p>
+    <label for="title">Name:</label>
+    <input type="text" name="title" size="100" />
+    </p>
+    <p>
+    <input type="submit" value="Create Playlist" />
+    </p>
+</form>
